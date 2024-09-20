@@ -1,0 +1,81 @@
+{
+  "name": "vmark",
+  "displayName": "vMark",
+  "description": "some kind of bookmarking",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vmark.listBookmarks",
+        "title": "vMark: List Bookmarks"
+      },
+      {
+        "command": "vmark.setBookmark1",
+        "title": "vMark: Set Bookmark 1"
+      },
+      {
+        "command": "vmark.setBookmark2",
+        "title": "vMark: Set Bookmark 2"
+      },
+      {
+        "command": "vmark.setBookmark3",
+        "title": "vMark: Set Bookmark 3"
+      },
+      {
+        "command": "vmark.setBookmark4",
+        "title": "vMark: Set Bookmark 4"
+      },
+      {
+        "command": "vmark.setBookmark5",
+        "title": "vMark: Set Bookmark 5"
+      },
+      {
+        "command": "vmark.jumpToBookmark1",
+        "title": "vMark: Jump to Bookmark 1"
+      },
+      {
+        "command": "vmark.jumpToBookmark2",
+        "title": "vMark: Jump to Bookmark 2"
+      },
+      {
+        "command": "vmark.jumpToBookmark3",
+        "title": "vMark: Jump to Bookmark 3"
+      },
+      {
+        "command": "vmark.jumpToBookmark4",
+        "title": "vMark: Jump to Bookmark 4"
+      },
+      {
+        "command": "vmark.jumpToBookmark5",
+        "title": "vMark: Jump to Bookmark 5"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "typescript": "^5.5.4",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
